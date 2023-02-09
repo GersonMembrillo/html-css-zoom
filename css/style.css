@@ -10,6 +10,7 @@
   --text-button: #FF0000;
   --bg-black: #000000;
   --bg-footer: #222222;
+  --trasparent: rgba(74, 74, 74, 0.75);
 }
 
 .d-flex{
@@ -51,10 +52,44 @@ nav{
 
 /* main */
 
+.container{
+  max-width: 90vw;
+  margin:  auto;
+  gap: 10px;
+    position: relative;
+      justify-content: flex-start;
+      align-content: flex-start;
+      flex-flow: row wrap;
+}
+
+
 main{
+  padding: 20px 0;
   background-color: var(--bg-black);
   height: calc(100vh - 160px);
 }
+
+.window{
+  width: calc((100%/7) - 10px);
+  position: relative;
+  object-fit: contain;
+}
+
+.window img{
+  width: 100%;
+}
+
+.micro {
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  color: var(--main-color);
+  background-color: var(--trasparent);
+  padding: 5px;
+  left: 0;
+  bottom: 0;
+}
+
 /* footer */
 
 footer{
@@ -62,5 +97,3 @@ footer{
     color: var(--main-color);
     height: 120px;
 }
-
-.container
